@@ -20,7 +20,6 @@ void testing(ChessBoard board) {
     cout << "Status = " << status << endl;
 
     
-    // White Pawn - killing
     cout << "Moving C4 to D5"<<endl;
     status = board.move("c4", "d5");
     cout << "Status = " << status << endl;
