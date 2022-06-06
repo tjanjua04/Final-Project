@@ -4,7 +4,7 @@ ChessPiece::ChessPiece(ChessBoard* board, Color color){
     this->board=board;
     this->color=color;
 }
-string ChessPiece::getPosition() const//returns the position of the piece in the format single letter (a..h) followed by a single digit (1..8).
+string ChessPiece::getPosition() const
 {
     char ans=row+'a';
     char ans2=column+'0';
