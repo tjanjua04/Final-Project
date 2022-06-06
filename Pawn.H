@@ -17,7 +17,7 @@ class Pawn : public ChessPiece
     private:
 };
 
-#endif // PAWN_H
+#endif 
 Filename: Queen.h
 
 #ifndef QUEEN_H
@@ -39,7 +39,7 @@ class Queen : public ChessPiece
     private:
 };
 
-#endif // QUEEN_H
+#endif
 Filename: Rook.h
 
 #ifndef ROOK_H
@@ -61,4 +61,4 @@ class Rook: public ChessPiece
     private:
 };
 
-#endif // ROOK_H
+#endif
