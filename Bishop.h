@@ -19,7 +19,7 @@ vector<string> *Bishop::legalMoves() const
 {
   vector<string> *res = new vector<string>();
   int c_row, c_col;
-  for (c_row = row - 1, c_col = column - 1; ChessBoard::isCorrect(c_row) && ChessBoard::isCorrect(c_col); c_row--, c_col--) //push_back
+  for (c_row = row - 1, c_col = column - 1; ChessBoard::isCorrect(c_row) && ChessBoard::isCorrect(c_col); c_row--, c_col--)
     if (board->getPiece(Position(c_row, c_col)) == NULL)
       res->push_back(ChessBoard::coordToString(c_row, c_col));
     else
@@ -29,7 +29,7 @@ vector<string> *Bishop::legalMoves() const
       if (board->getPiece(Position(c_row, c_col))->getColor() != color)
         res->push_back(ChessBoard::coordToString(c_row, c_col));
 
-  for (c_row = row + 1, c_col = column + 1; ChessBoard::isCorrect(c_row) && ChessBoard::isCorrect(c_col); c_row++, c_col++) //push_back
+  for (c_row = row + 1, c_col = column + 1; ChessBoard::isCorrect(c_row) && ChessBoard::isCorrect(c_col); c_row++, c_col++) 
     if (board->getPiece(Position(c_row, c_col)) == NULL)
       res->push_back(ChessBoard::coordToString(c_row, c_col));
     else
@@ -39,7 +39,7 @@ vector<string> *Bishop::legalMoves() const
       if (board->getPiece(Position(c_row, c_col))->getColor() != color)
         res->push_back(ChessBoard::coordToString(c_row, c_col));
 
-  for (c_row = row + 1, c_col = column - 1; ChessBoard::isCorrect(c_row) && ChessBoard::isCorrect(c_col); c_row++, c_col--) //push_back
+  for (c_row = row + 1, c_col = column - 1; ChessBoard::isCorrect(c_row) && ChessBoard::isCorrect(c_col); c_row++, c_col--) 
     if (board->getPiece(Position(c_row, c_col)) == NULL)
       res->push_back(ChessBoard::coordToString(c_row, c_col));
     else
@@ -49,7 +49,7 @@ vector<string> *Bishop::legalMoves() const
       if (board->getPiece(Position(c_row, c_col))->getColor() != color)
         res->push_back(ChessBoard::coordToString(c_row, c_col));
 
-  for (c_row = row - 1, c_col = column + 1; ChessBoard::isCorrect(c_row) && ChessBoard::isCorrect(c_col); c_row--, c_col++) //push_back
+  for (c_row = row - 1, c_col = column + 1; ChessBoard::isCorrect(c_row) && ChessBoard::isCorrect(c_col); c_row--, c_col++) 
     if (board->getPiece(Position(c_row, c_col)) == NULL)
       res->push_back(ChessBoard::coordToString(c_row, c_col));
     else
