@@ -2,12 +2,10 @@
 
 Knight::Knight(ChessBoard* board, Color color):ChessPiece(board, color)
 {
-    //ctor
 }
 
 Knight::~Knight()
 {
-    //dtor
 }
 
 
