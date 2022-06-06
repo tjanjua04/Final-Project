@@ -16,7 +16,7 @@ class King : public ChessPiece
     private:
 };
 
-#endif // KING_H
+#endif
 Filename: Knight.h
 
 #ifndef KNIGHT_H
@@ -37,4 +37,4 @@ class Knight : public ChessPiece
     private:
 };
 
-#endif // KNIGHT_H
+#endif
