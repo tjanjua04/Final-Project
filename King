@@ -1,0 +1,40 @@
+#ifndef KING_H
+#define KING_H
+#include "ChessBoard.h"
+
+
+class King : public ChessPiece
+{
+    public:
+        King(ChessBoard *board, Color color);
+        virtual ~King();
+
+        string toString() const;
+        vector<string>* legalMoves()const;
+    protected:
+
+    private:
+};
+
+#endif // KING_H
+Filename: Knight.h
+
+#ifndef KNIGHT_H
+#define KNIGHT_H
+
+#include "ChessBoard.h"
+
+
+class Knight : public ChessPiece
+{
+    public:
+        Knight(ChessBoard *board, Color color);
+        virtual ~Knight();
+        string toString() const;
+        vector<string>* legalMoves()const;
+    protected:
+
+    private:
+};
+
+#endif // KNIGHT_H
